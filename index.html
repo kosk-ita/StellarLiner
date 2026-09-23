@@ -7,19 +7,13 @@
 <style>
   :root { color-scheme: dark; }
   html, body {
-    height: 100%;
     margin: 0;
     background: #0b0d14;
     color: #e8e6df;
     font-family: 'Courier New', ui-monospace, monospace;
   }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  main { padding: 2rem; max-width: 28rem; }
+  body { text-align: center; }
+  main { padding: 2.5rem 1.5rem 3.5rem; max-width: 40rem; margin: 0 auto; }
   h1 {
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -42,7 +36,21 @@
     transition: background 0.2s ease;
   }
   a.watch:hover { background: rgba(179, 139, 58, 0.12); }
-  p.note { color: #55534a; font-size: 0.75rem; margin-top: 2rem; }
+  p.note { color: #55534a; font-size: 0.75rem; margin: 0.75rem 0 0; }
+  section.route { margin-top: 3rem; }
+  h2 {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 0.95rem;
+    color: #9a978c;
+    margin: 0 0 0.75rem;
+  }
+  img.route-map {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #23262f;
+    border-radius: 2px;
+  }
 </style>
 </head>
 <body>
@@ -50,7 +58,11 @@
   <h1>Stellar Liner</h1>
   <p class="sub">tau Ceti sightseeing route</p>
   <a class="watch" href="https://drive.google.com/drive/folders/1ajWgjOl_tbLghQ5sW2oqTy8tfSeIi5Dz?usp=sharing" target="_blank" rel="noopener">watch the ride again</a>
-  <p class="note">opens a Google Drive folder</p>
+  <p class="note">link will move to YouTube once the video is up</p>
+  <section class="route">
+    <h2>route map</h2>
+    <img class="route-map" src="img/route_map.png" alt="tau Ceti sightseeing route map">
+  </section>
 </main>
 </body>
 </html>
